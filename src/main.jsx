@@ -2,16 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { CiStar } from "react-icons/ci";
+import Home from "./components/Pages/Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div className="flex justify-between p-10">
-        Hello world! <CiStar />
-      </div>
-    ),
+    element: <Home></Home>,
   },
 ]);
 

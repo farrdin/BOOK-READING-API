@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-family: "Playfair display";
+}
+ul,
+button,
+span,
+p {
+  font-family: "work sans";
+}
