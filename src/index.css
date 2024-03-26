@@ -5,9 +5,26 @@
 h1 {
   font-family: "Playfair display";
 }
+h2 {
+  font-family: "work sans";
+}
 ul,
 button,
 span,
 p {
   font-family: "work sans";
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn).active {
+  background-color: white;
+  border: 1px solid #23be0a;
+  color: #23be0a;
+  font-family: "work sans";
+  font-size: 18px;
+  font-weight: 600;
+}
+ul li :hover {
+  background-color: white;
+  color: #23be0a;
+  border: 1px solid #23be0a;
 }

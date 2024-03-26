@@ -1,4 +1,6 @@
 import BannerImg from "../../../assets/images/Banner.png";
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   return (
     <div className="hero min-h-screen bg-base-200 rounded-2xl mt-12">
@@ -9,7 +11,7 @@ const Banner = () => {
             Books to freshen up your bookshelf
           </h1>
           <button className="btn bg-[#23BE0A] text-[#FFFFFF] text-xl font-bold ">
-            View The List
+            <Link to="/listedbook">View The List</Link>
           </button>
         </div>
       </div>

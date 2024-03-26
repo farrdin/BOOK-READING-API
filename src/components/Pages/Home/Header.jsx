@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="navbar bg-base-100 mt-8">
@@ -35,28 +37,37 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Book Vibe</a>
+        <NavLink
+          to="/"
+          href="#"
+          className=" text-xl text-[#131313] font-bold hover:bg-[white] hover:border-[#23BE0A] hover:border-[1px] p-2 rounded-xl"
+        >
+          Book Vibe
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 space-x-3">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a>Listed Books</a>
+            <NavLink to="/listedbook">Listed Books</NavLink>
           </li>
-
           <li>
-            <a>Pages to Read</a>
+            <NavLink to="/pageread">Pages to Read</NavLink>
           </li>
         </ul>
       </div>
-      <div className="navbar-end space-x-5">
+      <div className="navbar-end space-x-1">
         <div>
-          <a className="btn">Sign In </a>
+          <a className="btn bg-[#23BE0A] text-white text-lg font-semibold hover:text-black">
+            Sign In{" "}
+          </a>
         </div>
-        <div>
-          <a className="btn">Sign Up</a>
+        <div className="hidden lg:block">
+          <a className="btn bg-[#59C6D2] text-white text-lg font-semibold hover:text-black">
+            Sign Up
+          </a>
         </div>
       </div>
     </div>
