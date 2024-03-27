@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./components/Pages/Home";
-import PageReload from "./components/Pages/PageReload";
-import ListedBooks from "./components/Pages/ListedBooks";
-import Homepage from "./components/Pages/Home/Homepage";
-import SingleBook from "./components/Pages/SingleBook";
-import ErrorPage from "./components/Pages/Error";
+import Home from "./Routes/Home";
+import PageRead from "./Routes/PageRead";
+import ListedBooks from "./Routes/ListedBooks";
+import Homepage from "./Routes/Homepage";
+import SingleBook from "./Routes/SingleBook";
+import ErrorPage from "./components/Error";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -19,23 +20,24 @@ const router = createBrowserRouter([
         path: "/",
         element: <Homepage></Homepage>,
         errorElement: <ErrorPage />,
-        loader: () => fetch("./Api.json"),
+        loader: () => fetch("/Api.json"),
       },
       {
         path: "/listedbook",
         element: <ListedBooks></ListedBooks>,
         errorElement: <ErrorPage />,
+        loader: () => fetch("/Api.json"),
       },
       {
         path: "/pageread",
-        element: <PageReload></PageReload>,
+        element: <PageRead></PageRead>,
         errorElement: <ErrorPage />,
       },
       {
         path: "/book/:bookId",
         element: <SingleBook></SingleBook>,
         errorElement: <ErrorPage />,
-        loader: () => fetch(`./Api.json`),
+        loader: () => fetch("/Api.json"),
       },
     ],
   },
@@ -44,5 +46,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </React.StrictMode>
 );

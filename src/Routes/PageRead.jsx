@@ -1,6 +1,6 @@
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
 
-const PageReload = () => {
+const PageRead = () => {
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
   const data = [
     {
@@ -67,6 +67,6 @@ const PageReload = () => {
   );
 };
 
-export default PageReload;
+export default PageRead;
 
 // In this chart i have to show horizentally book names on local storage and vertically books pages number from local storage

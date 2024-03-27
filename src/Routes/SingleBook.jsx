@@ -1,39 +1,52 @@
-import { useLoaderData } from "react-router-dom";
-import BookImg from "../../assets/images/Book.png";
+import { useLoaderData, useParams } from "react-router-dom";
+import { readBook, wishBook } from "../Utilities/LocalStorage";
 
 const SingleBook = () => {
   const singleBook = useLoaderData();
-  console.log(singleBook);
+  const { bookId } = useParams();
+  const bookIdint = parseInt(bookId);
+  const book = singleBook.find((book) => book.bookId === bookIdint);
+  const {
+    bookName,
+    author,
+    image,
+    review,
+    totalPages,
+    rating,
+    category,
+    tags,
+    publisher,
+    yearOfPublishing,
+  } = book;
+
+  const readList = () => {
+    readBook(bookIdint);
+  };
+  const wishList = () => {
+    wishBook(bookIdint);
+  };
+
   return (
-    <div className="my-5 lg:flex justify-between ">
+    <div className="my-10 lg:flex justify-between ">
       <div className="img mb-10 lg:mb-0 lg:w-[53%] border rounded flex justify-center bg-[#1313130D]">
-        <img src={BookImg} className="min-h-[calc(100vh-100px)] p-20" />
+        <img src={image} className="min-h-[calc(100vh-100px)] p-20" />
       </div>
       <div className="content lg:w-[45%] flex flex-col gap-3">
         <div className="flex flex-col gap-2">
-          <h1 className="text-[#131313] text-4xl font-bold">
-            The Catcher in the Rye
-          </h1>
-          <p className="text-[#131313CC] text-xl font-medium">
-            By : Awlad Hossain
-          </p>
+          <h1 className="text-[#131313] text-4xl font-bold">{bookName}</h1>
+          <p className="text-[#131313CC] text-xl font-medium">By : {author}</p>
         </div>
         <hr />
         <div>
           <span className="text-xl font text-[#131313CC] font-medium">
-            Fiction
+            {category}
           </span>
           <hr className="my-3" />
           <p className="text-[#131313B2] font-normal text-base leading-7">
             <span className="text-[#131313] font-bold text-base leading-7">
               Review :
-            </span>{" "}
-            Sit amet consectetur. Interdum porta pulvinar non sit aliquam.
-            Aenean pulvinar blandit vel non enim elementum penatibus
-            pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi
-            elementum a auctor erat diam tellus. Fermentum faucibus nulla enim
-            ornare. Id neque neque pretium enim platea urna non dictum. Faucibus
-            dignissim ridiculus nibh tristique massa non.
+            </span>
+            {review}
           </p>
         </div>
         <div className="flex gap-3">
@@ -41,10 +54,10 @@ const SingleBook = () => {
             Tag :
           </span>
           <span className="text-base text-[#23BE0A] font-medium bg-[#23BE0A0D] p-1">
-            #Young Adult
+            #{tags[0]}
           </span>
           <span className="text-base text-[#23BE0A] font-medium bg-[#23BE0A0D] p-1">
-            #Identity
+            #{tags[1]}
           </span>
         </div>
         <hr />
@@ -54,7 +67,7 @@ const SingleBook = () => {
               Number of Pages:
             </span>
             <span className="text-[#131313] text-base font-semibold leading-7">
-              281
+              {totalPages}
             </span>
           </div>
           <div className="flex justify-between">
@@ -62,7 +75,7 @@ const SingleBook = () => {
               Publisher:
             </span>
             <span className="text-[#131313] text-base font-semibold leading-7">
-              J.B Lippincott & Co.
+              {publisher}
             </span>
           </div>
           <div className="flex justify-between">
@@ -70,7 +83,7 @@ const SingleBook = () => {
               Year of Publishing:
             </span>
             <span className="text-[#131313] text-base font-semibold leading-7">
-              1960
+              {yearOfPublishing}
             </span>
           </div>
           <div className="flex justify-between ">
@@ -78,15 +91,21 @@ const SingleBook = () => {
               Rating:
             </span>
             <span className="text-[#131313] text-base font-semibold leading-7">
-              4.8
+              {rating}
             </span>
           </div>
         </div>
         <div className="flex-grow flex gap-3">
-          <button className="btn hover:bg-[#23BE0A] hover:text-white">
+          <button
+            onClick={readList}
+            className="btn hover:bg-[#23BE0A] hover:text-white"
+          >
             Read
           </button>
-          <button className="btn bg-[#50B1C9] text-white text-lg font-semibold hover:text-black">
+          <button
+            onClick={wishList}
+            className="btn bg-[#50B1C9] text-white text-lg font-semibold hover:text-black"
+          >
             Wishlist
           </button>
         </div>
