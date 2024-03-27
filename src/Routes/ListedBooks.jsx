@@ -102,17 +102,16 @@ const ListedBooks = () => {
                   </div>
                   <hr />
                   <div className=" flex gap-2 ">
-                    <span className="px-4 py-1 bg-[#328EFF26] text-[#328EFF] text-base font-normal rounded-full">
+                    <span className="px-4 py-1 bg-[#328EFF26] text-[#328EFF] text-base font-normal rounded-full items-center flex">
                       Category: {book.category}
                     </span>
-                    <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal ">
+                    <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal items-center flex">
                       Rating: {book.rating}
                     </span>
-                    <Link
-                      to
-                      className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium"
-                    >
-                      View Details
+                    <Link to={`/Book/${book.bookId}`}>
+                      <button className="btn px-4 rounded-full bg-[#23BE0A] text-[white] text-base font-medium hover:text-black">
+                        View Details
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -173,14 +172,16 @@ const ListedBooks = () => {
                   </div>
                   <hr />
                   <div className=" flex gap-2 ">
-                    <span className="px-4 py-1 bg-[#328EFF26] text-[#328EFF] text-base font-normal rounded-full">
+                    <span className="px-4 py-1 bg-[#328EFF26] text-[#328EFF] text-base font-normal rounded-full items-center flex">
                       Category: {book.category}
                     </span>
-                    <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal ">
+                    <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal items-center flex">
                       Rating: {book.rating}
                     </span>
-                    <Link className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium">
-                      View Details
+                    <Link to={`/Book/${book.bookId}`}>
+                      <button className="btn px-4 rounded-full bg-[#23BE0A] text-[white] text-base font-medium hover:text-black">
+                        View Details
+                      </button>
                     </Link>
                   </div>
                 </div>
