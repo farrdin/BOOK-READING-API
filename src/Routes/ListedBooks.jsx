@@ -1,36 +1,36 @@
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineInsertPageBreak } from "react-icons/md";
 import { GoPeople } from "react-icons/go";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getReadBooks, getWishBooks } from "../Utilities/LocalStorage";
 
 const ListedBooks = () => {
-  const books = useLoaderData();
+  const Listedbooks = useLoaderData();
 
   const [readedbook, setreadedbook] = useState([]);
   const [wishBook, setWishBook] = useState([]);
 
   useEffect(() => {
     const savedBooks = getReadBooks();
-    if (books.length > 0) {
-      const readedBooks = books.filter((book) =>
+    if (Listedbooks.length > 0) {
+      const readedBooks = Listedbooks.filter((book) =>
         savedBooks.includes(book.bookId)
       );
       setreadedbook(readedBooks);
     }
-  }, [books]);
+  }, [Listedbooks]);
 
   useEffect(() => {
     const savedWBooks = getWishBooks();
-    if (books.length > 0) {
-      const wishedBooks = books.filter((book) =>
+    if (Listedbooks.length > 0) {
+      const wishedBooks = Listedbooks.filter((book) =>
         savedWBooks.includes(book.bookId)
       );
       setWishBook(wishedBooks);
       console.log(wishedBooks);
     }
-  }, [books]);
+  }, [Listedbooks]);
   return (
     <div>
       <div className="rounded-2xl bg-[#1313130D] py-8 text-center">
@@ -108,9 +108,12 @@ const ListedBooks = () => {
                     <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal ">
                       Rating: {book.rating}
                     </span>
-                    <span className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium">
+                    <Link
+                      to
+                      className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium"
+                    >
                       View Details
-                    </span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -176,9 +179,9 @@ const ListedBooks = () => {
                     <span className="px-4 py-1 rounded-full bg-[#FFAC3326] text-[#FFAC33] text-base font-normal ">
                       Rating: {book.rating}
                     </span>
-                    <span className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium">
+                    <Link className="px-4 py-1 rounded-full bg-[#23BE0A] text-[white] text-lg font-medium">
                       View Details
-                    </span>
+                    </Link>
                   </div>
                 </div>
               </div>
