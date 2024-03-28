@@ -52,7 +52,6 @@ const PageRead = () => {
           }))}
           margin={{
             top: 40,
-            right: 5,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />

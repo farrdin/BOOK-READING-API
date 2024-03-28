@@ -3,17 +3,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-      <nav className="grid grid-flow-col gap-4">
-        <Link to={"/"} className="link link-hover">
-          Home
-        </Link>
-        <Link to={"/listedbook"} className="link link-hover">
-          Listed Books
-        </Link>
-        <Link to={"/PageRead"} className="link link-hover">
-          Pages to Read
-        </Link>
-      </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a href="https://twitter.com">
