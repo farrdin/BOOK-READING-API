@@ -4,7 +4,7 @@ const Author = () => {
   const authors = useLoaderData();
   console.log(authors);
   return (
-    <div className="my-10 grid grid-cols-3 gap-4 ">
+    <div className="my-10 grid lg:grid-cols-3 gap-4 ">
       {authors.map((author, index) => (
         <div
           key={index}
