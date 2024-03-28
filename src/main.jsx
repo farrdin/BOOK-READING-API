@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Routes/Home";
-import PageRead from "./Routes/PageRead";
-import ListedBooks from "./Routes/ListedBooks";
 import Homepage from "./Routes/Homepage";
+import ListedBooks from "./Routes/ListedBooks";
+import PageRead from "./Routes/PageRead";
+import Author from "./Routes/Author";
+import About from "./Routes/About";
 import SingleBook from "./Routes/SingleBook";
 import ErrorPage from "./components/Error";
 import { ToastContainer } from "react-toastify";
@@ -33,6 +35,17 @@ const router = createBrowserRouter([
         element: <PageRead></PageRead>,
         errorElement: <ErrorPage />,
         loader: () => fetch("/Api.json"),
+      },
+      {
+        path: "/author",
+        element: <Author></Author>,
+        errorElement: <ErrorPage />,
+        loader: () => fetch("/Authors.json"),
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+        errorElement: <ErrorPage />,
       },
       {
         path: "/book/:bookId",

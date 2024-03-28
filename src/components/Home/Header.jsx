@@ -26,14 +26,19 @@ const Header = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>Listed Books</a>
+              <NavLink to="/listedbook">Listed Books</NavLink>
             </li>
-
             <li>
-              <a>Pages to Read</a>
+              <NavLink to="/pageread">Pages to Read</NavLink>
+            </li>
+            <li>
+              <NavLink to="/author">Author</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
             </li>
           </ul>
         </div>
@@ -46,7 +51,7 @@ const Header = () => {
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-3">
+        <ul className="menu menu-horizontal space-x-1">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -56,16 +61,22 @@ const Header = () => {
           <li>
             <NavLink to="/pageread">Pages to Read</NavLink>
           </li>
+          <li>
+            <NavLink to="/author">Author</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end space-x-1">
         <div>
-          <a className="btn bg-[#23BE0A] text-white text-lg font-semibold hover:text-black">
+          <a className="btn bg-[#23BE0A] text-white text-base font-semibold hover:text-black">
             Sign In{" "}
           </a>
         </div>
         <div className="hidden lg:block">
-          <a className="btn bg-[#59C6D2] text-white text-lg font-semibold hover:text-black">
+          <a className="btn bg-[#59C6D2] text-white text-base font-semibold hover:text-black">
             Sign Up
           </a>
         </div>

@@ -1,0 +1,82 @@
+[
+  {
+    "author": "George Orwell",
+    "birthplace": "Motihari, Bihar, British India",
+    "birthdate": "June 25, 1903",
+    "diedDate": "January 21, 1950",
+    "education": "Eton College",
+    "description": "George Orwell, whose real name was Eric Arthur Blair, was an English novelist, essayist, journalist, and critic. He is best known for his dystopian novel '1984' and allegorical novella 'Animal Farm.' Orwell's works often explore social injustice, totalitarianism, and the corruption of language. He was a keen observer of political and social issues, and his writings continue to influence modern literature and political discourse."
+  },
+  {
+    "author": "Harper Lee",
+    "birthplace": "Monroeville, Alabama, United States",
+    "birthdate": "April 28, 1926",
+    "diedDate": "February 19, 2016",
+    "education": "Huntingdon College, University of Alabama",
+    "description": "Harper Lee was an American novelist best known for her Pulitzer Prize-winning novel 'To Kill a Mockingbird.' The novel addresses racial injustice and moral growth in the Southern United States during the 1930s. Lee's literary contribution has had a profound impact on American literature, and her portrayal of the complexities of human nature continues to resonate with readers worldwide."
+  },
+  {
+    "author": "F. Scott Fitzgerald",
+    "birthplace": "St. Paul, Minnesota, United States",
+    "birthdate": "September 24, 1896",
+    "diedDate": "December 21, 1940",
+    "education": "Princeton University",
+    "description": "F. Scott Fitzgerald was an American novelist and short story writer known for his portrayal of the Jazz Age, a term he coined himself. His most famous work, 'The Great Gatsby,' is considered a masterpiece of American literature and explores themes of wealth, love, and the American Dream. Fitzgerald's writing style is characterized by lyrical prose and keen social observation."
+  },
+  {
+    "author": "J.D. Salinger",
+    "birthplace": "New York City, New York, United States",
+    "birthdate": "January 1, 1919",
+    "diedDate": "January 27, 2010",
+    "education": "Columbia University",
+    "description": "J.D. Salinger was an American writer best known for his novel 'The Catcher in the Rye,' which became an enduring classic of adolescent literature. Salinger's works often explore themes of alienation, identity, and the search for meaning in a post-war world. Despite his reclusive nature later in life, Salinger's influence on literature and popular culture remains significant."
+  },
+  {
+    "author": "Jane Austen",
+    "birthplace": "Steventon, Hampshire, England",
+    "birthdate": "December 16, 1775",
+    "diedDate": "July 18, 1817",
+    "education": "None (Home-educated)",
+    "description": "Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique, and comment upon the British landed gentry at the end of the 18th century. Her works, including 'Pride and Prejudice' and 'Sense and Sensibility,' are celebrated for their realism, biting social commentary, and masterful use of irony. Austen's novels continue to be widely read and adapted into various forms of media."
+  },
+  {
+    "author": "J.R.R. Tolkien",
+    "birthplace": "Bloemfontein, Orange Free State (now Free State Province), South Africa",
+    "birthdate": "January 3, 1892",
+    "diedDate": "September 2, 1973",
+    "education": "Exeter College, Oxford",
+    "description": "J.R.R. Tolkien was an English writer, poet, philologist, and academic, best known as the author of the classic high fantasy works 'The Hobbit' and 'The Lord of the Rings.' Tolkien's richly imagined world of Middle-earth has captivated readers for generations with its intricate mythology, languages, and epic storytelling. Beyond his literary achievements, Tolkien was a respected scholar in the field of philology."
+  },
+  {
+    "author": "Paulo Coelho",
+    "birthplace": "Rio de Janeiro, Brazil",
+    "birthdate": "August 24, 1947",
+    "diedDate": null,
+    "education": "Law School (Did not complete)",
+    "description": "Paulo Coelho is a Brazilian author known for his bestselling novel 'The Alchemist' and his philosophical writings. 'The Alchemist' has been translated into numerous languages and has sold millions of copies worldwide. Coelho's works often explore themes of spirituality, self-discovery, and the journey towards one's personal legend. He is considered one of the most influential authors of our time."
+  },
+  {
+    "author": "J.K. Rowling",
+    "birthplace": "Yate, Gloucestershire, England",
+    "birthdate": "July 31, 1965",
+    "diedDate": null,
+    "education": "University of Exeter",
+    "description": "J.K. Rowling is a British author best known for creating the 'Harry Potter' fantasy series, which has become one of the best-selling book series in history. The 'Harry Potter' books have inspired a vast franchise, including films, merchandise, and a theme park. Rowling's rags-to-riches story, combined with her philanthropic efforts and advocacy for various social causes, has made her one of the most influential authors of the 21st century."
+  },
+  {
+    "author": "J.R.R. Tolkien",
+    "birthplace": "Bloemfontein, Orange Free State (now Free State Province), South Africa",
+    "birthdate": "January 3, 1892",
+    "diedDate": "September 2, 1973",
+    "education": "Exeter College, Oxford",
+    "description": "J.R.R. Tolkien was an English writer, poet, philologist, and academic, best known as the author of the classic high fantasy works 'The Hobbit' and 'The Lord of the Rings.' Tolkien's richly imagined world of Middle-earth has captivated readers for generations with its intricate mythology, languages, and epic storytelling. Beyond his literary achievements, Tolkien was a respected scholar in the field of philology."
+  },
+  {
+    "author": "Dan Brown",
+    "birthplace": "Exeter, New Hampshire, United States",
+    "birthdate": "June 22, 1964",
+    "diedDate": null,
+    "education": "Amherst College",
+    "description": "Dan Brown is an American author known for his bestselling novels, particularly 'The Da Vinci Code,' which explores religious symbols, art history, and conspiracy theories. Brown's books are known for their fast-paced plots and intricate puzzles, often blending historical facts with fiction. 'The Da Vinci Code' in particular sparked controversy and became a global phenomenon, leading to numerous adaptations and spin-offs."
+  }
+]
